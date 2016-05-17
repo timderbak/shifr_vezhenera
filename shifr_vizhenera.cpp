@@ -10,7 +10,7 @@
 
 using namespace std;
 string get_key(string key, string text);
-string vizhenere(string alphabet, string text, string new_key, string shifr, int h);
+void vizhenere(string alphabet, string text, string new_key, string shifr, int h);
 string readtextf(string tname);
 string readkeyf(string kname);
 string deshifr_key (string new_key, string alphabet);
@@ -140,7 +140,7 @@ string deshifr_key(string new_key, string alphabet)
 	return new_key;
 }
 
-string vizhenere(string alphabet, string text, string new_key, string shifr, int h)
+void vizhenere(string alphabet, string text, string new_key, string shifr, int h)
 {
 	int x;
 	int y;
@@ -169,7 +169,5 @@ string vizhenere(string alphabet, string text, string new_key, string shifr, int
 			
 				if(h==0)
 					cout << "Decrypted text: " << shifr << endl;				
-			
-	return shifr;
-}	
+		}	
 
